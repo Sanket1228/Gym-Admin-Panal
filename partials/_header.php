@@ -12,7 +12,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Profile</a>
+      <a class="nav-link" href="#about">About Us</a>
     </li>';
     if(isset($_SESSION['roll']) && $_SESSION['roll'] == 1){
         echo'<li class="nav-item dropdown">
@@ -30,12 +30,11 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     echo'<li class="nav-item">
       <a class="nav-link " href="#">About</a>
     </li>
-  </ul>
- 
-  <form class="form-inline my-2 my-lg-0">
+  </ul>';
+    echo'<form class="form-inline my-2 my-lg-0">
     <a href="/adminGym/logout.php" class="btn btn-outline-success ml-2">Logout</a>
-  </form>
-  </div>
+  </form>';
+  echo'</div>
 </div>
 </nav>';
 

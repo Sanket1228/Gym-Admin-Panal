@@ -32,7 +32,7 @@ if (empty($_SESSION)) {
                     <div class="carousel-caption">
                         <h1>Welcome , ' . $_SESSION['fname'] . '</h1>
                         <p>You can see your profile here....</p>
-                        <p><a class="btn btn-lg btn-warning" href="" role="button">Give Us Feedback</a></p>
+                        <p><a class="btn btn-lg btn-warning" href="Tel: 32434131" role="button">Call Us Now</a></p>
                     </div>
                 </div>
             </div>
@@ -43,11 +43,13 @@ if (empty($_SESSION)) {
     <?php
     echo '<div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4 font-weight-bold font-italic"> Welcome , ' . $_SESSION['fname'] . ' '. $_SESSION['lname'] . ' </h1>
+        <h1 class="display-4 font-weight-bold font-italic"> Welcome , ' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . ' </h1>
         <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
     </div>
 </div>';
     ?>
+
+    <?php include 'partials/_about.php'; ?>
 
     <?php include 'partials/_footer.php'; ?>
 
