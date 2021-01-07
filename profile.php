@@ -16,11 +16,15 @@ if (empty($_SESSION)) {
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Merriweather:ital,wght@1,300&family=Oswald&family=Redressed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/profile.css">
 
     <title>Welcome - Global Gym Center</title>
 </head>
 
-<body>
+<body style="font-family: Lora, serif;">
     <?php include 'partials/_header.php'; ?>
 
     <?php
@@ -30,8 +34,8 @@ if (empty($_SESSION)) {
                 <img class="first-slide" src="images/sliders/slide1.jpg" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Welcome , ' . $_SESSION['fname'] . '</h1>
-                        <p>You can see your profile here....</p>
+                        <h1 style="font-family: Lora, serif;">Welcome , ' . $_SESSION['fname'] . '</h1>
+                        <h5 style="font-family: Redressed, cursive;">You can see your profile here....</h5>
                         <p><a class="btn btn-lg btn-warning" href="Tel: 32434131" role="button">Call Us Now</a></p>
                     </div>
                 </div>
@@ -43,11 +47,13 @@ if (empty($_SESSION)) {
     <?php
     echo '<div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4 font-weight-bold font-italic"> Welcome , ' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . ' </h1>
+        <h1 class="display-4" style="font-family: Lora, serif;"> Welcome , ' . $_SESSION['fname'] . ' ' . $_SESSION['lname'] . ' </h1>
         <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
     </div>
 </div>';
     ?>
+
+    <?php include 'partials/_detailUser.php'; ?>
 
     <?php include 'partials/_about.php'; ?>
 

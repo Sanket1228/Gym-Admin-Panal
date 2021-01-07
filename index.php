@@ -14,9 +14,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				session_start();
 				$_SESSION['loggedin'] = true;
 				$_SESSION['roll'] = $row['roll'];
+				$_SESSION['id'] = $row['user_id'];
 				$_SESSION['username'] = $row['username'];
 				$_SESSION['fname'] = $row['fname'];
 				$_SESSION['lname'] = $row['lname'];
+				$_SESSION['email'] = $row['email'];
+				$_SESSION['mnumber'] = $row['mnumber'];
+				$_SESSION['age'] = $row['age'];
+				$_SESSION['weight'] = $row['weight'];
+				$_SESSION['height'] = $row['height'];
+				$_SESSION['address'] = $row['address'];
+				$_SESSION['desc'] = $row['desc'];
+				$_SESSION['plan'] = $row['plan'];
+				$_SESSION['payment'] = $row['payment'];
 				header("Location: /adminGym/profile.php?succesfullLogin=true");
 				exit();
 			} else {
@@ -50,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<title>Welcome - Global Gym Center</title>
 </head>
 
-<body>
+<body style="font-family: Lora, serif;"> 
 
 	<?php
 	if (isset($_GET['succesfullLogin']) && $_GET['succesfullLogin'] == "false") {

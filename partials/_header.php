@@ -1,7 +1,7 @@
 <?php
 echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 <div class="container">
-<a class="navbar-brand" href="#">Global Gym Center</a>
+<a class="navbar-brand" href="#" style="font-family: Lora, serif;">Global Gym Center</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -12,7 +12,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#about">About Us</a>
+      <a class="nav-link" href="#Profile">Profile</a>
     </li>';
     if(isset($_SESSION['roll']) && $_SESSION['roll'] == 1){
         echo'<li class="nav-item dropdown">
@@ -28,11 +28,11 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     }
 
     echo'<li class="nav-item">
-      <a class="nav-link " href="#">About</a>
+      <a class="nav-link " href="#about">About</a>
     </li>
   </ul>';
     echo'<form class="form-inline my-2 my-lg-0">
-    <a href="/adminGym/logout.php" class="btn btn-outline-success ml-2">Logout</a>
+    <a href="/adminGym/logout.php" class="btn btn-outline-success ml-2" style="font-family: Lora, serif;">Logout</a>
   </form>';
   echo'</div>
 </div>

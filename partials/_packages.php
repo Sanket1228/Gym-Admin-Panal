@@ -8,34 +8,20 @@ echo'
         <tr>
             <th scope="col">Duration</th>
             <th scope="col">General</th>
-            <th scope="col">Couple</th>
-            <th scope="col">Offers</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th scope="row">Monthly</th>
-            <td>1500</td>
-            <td>2500</td>
-            <td>1000</td>
+            <td>300 ₹ Per Month</td>
         </tr>
         <tr>
             <th scope="row">Quarterly</th>
-            <td>3500</td>
-            <td>6500</td>
-            <td>2500</td>
-        </tr>
-        <tr>
-            <th scope="row">Half-Yearly</th>
-            <td>6500</td>
-            <td>11000</td>
-            <td>4500</td>
+            <td>600 ₹ Per Month</td>
         </tr>
         <tr>
             <th scope="row">Yearly</th>
-            <td>10000</td>
-            <td>18000</td>
-            <td>7500</td>
+            <td>3000 ₹ Per Year</td>
         </tr>
     </tbody>
 </table>
@@ -48,8 +34,6 @@ echo'
         <div class="blog-post" style="font-family: Lora, serif;">
             <p class="mb-0">» All Rates are in Indian Rs.</p>
             <p class="mb-0"> » General Rates are applicable for Per Person Bases.</p>
-            <p class="mb-0"> » Couple Rates are applicable for Husband & Wife only.</p>
-            <p class=""> » Happy hours Rates are applicable between 11:00 am to 5:00 pm only.</p>
         </div>
     </div>
     <div class="col-md-6">
@@ -57,8 +41,8 @@ echo'
             Contact US
         </h3>
         <div class="text-center" style="font-family: Lora, serif;">
-            <p>Name : Anish Shinde</p>
-            <p>Phone Number : 981983418041</p>
+            <p> Trainer </p>
+            <p>Phone Number : 9191212122</p>
         </div>
 
     </div>
